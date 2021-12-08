@@ -3,8 +3,7 @@
 
 data "azurerm_resource_group" "mytfrg" {
        name     = "TerraformRG"
-       location = "eastus"
-      }
+    }
 
 output "id" {
   value = data.azurerm_resource_group.mytfrg.id
